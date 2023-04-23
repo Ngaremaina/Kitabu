@@ -16,12 +16,16 @@ function App() {
 
   const addBook = (newbook)=>{
     setBook([...books, newbook])
+  }
 
+  const searchBook = (search) => {
+    const fetchResults = books.filter(book => book.title === search)
+    return fetchResults
   }
 
   return (
     <div className='mybooks'>
-      <Header/>
+      <Header searchBook = {searchBook}/>
       <BookList books={books}/>
       <NewBook addBook={addBook}/>
          
