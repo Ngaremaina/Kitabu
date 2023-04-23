@@ -204,7 +204,7 @@
     },
     {
       "title": "Insurgent",
-      "subtitle":"An edition of Insurgent (2011)",
+      "subtitle": "An edition of Insurgent (2011)",
       "author": "Veronica Roth",
       "published": "2012",
       "publisher": "HarperCollins Children's Books",
@@ -249,6 +249,19 @@
       "description": "Jude, seventeen and mortal, gets tangled in palace intrigues while trying to win a place in the treacherous High Court of Faerie, where she and her sisters have lived for a decade.",
       "cover": "https://covers.openlibrary.org/b/id/13128236-L.jpg",
       "id": 15
+    },
+    {
+      "title": "The Song of Achilles",
+      "subtitle": "An edition of The Song of Achilles (2011)",
+      "author": "Madeline Miller",
+      "published": "2012",
+      "publisher": "Ecco",
+      "price": "680",
+      "quantity": "24",
+      "sold": "12",
+      "description": "Patroclus, an awkward young prince, follows Achilles into war, little knowing that the years that follow will test everything they have learned, everything they hold dear. And that, before he is ready, he will be forced to surrender his friend to the hands of Fate. Set during the Trojan War.",
+      "cover": "https://covers.openlibrary.org/b/id/9249299-L.jpg",
+      "id": 16
     }
   ]
 }

@@ -9,11 +9,10 @@ function BookList({books}){
     })
 
     return (
-        <div className="container-fluid">
-            <div class="card-deck col d-flex p-3 justify-content-center">
-                {displayBooks}
-            </div>
+        <div class="card-deck col d-flex p-3 justify-content-center">
+            {displayBooks}
         </div>
+        
     )
 }
 

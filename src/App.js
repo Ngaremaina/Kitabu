@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Header from './Header';
 import BookList from './BookList';
+import NewBook from './NewBook';
 
 
 function App() {
@@ -13,10 +14,17 @@ function App() {
     .then(data => setBook(data))
   })
 
+  const addBook = (newbook)=>{
+    setBook([...books, newbook])
+
+  }
+
   return (
-    <div>
+    <div className='mybooks'>
       <Header/>
       <BookList books={books}/>
+      <NewBook addBook={addBook}/>
+         
     </div>
   );
 }
