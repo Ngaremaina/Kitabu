@@ -12,15 +12,15 @@ function App() {
     fetch("http://localhost:3000/books")
     .then(res => res.json())
     .then(data => setBook(data))
-  })
+  },[])
 
   const addBook = (newbook)=>{
     setBook([...books, newbook])
   }
 
   const searchBook = (search) => {
-    const fetchResults = books.filter(book => book.title === search)
-    return fetchResults
+    const fetchResults = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase()))
+    return setBook(fetchResults)
   }
 
   return (

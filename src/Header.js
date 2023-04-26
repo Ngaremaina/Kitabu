@@ -13,7 +13,7 @@ function Header({searchBook}){
     return (
         <Nav class="navbar navbar-expand-sm text-white">
             <div class="container-fluid ">
-                <Link target="#" text="Vitabu"/>
+                <Link target="#" text="Home"/>
                 <div class="collapse navbar-collapse justify-content-end">
                     <Form class="navbar-form navbar-right" id="search-form" onSubmit={handleSubmit}>
                         <InputGroup>
