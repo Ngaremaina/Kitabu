@@ -3,7 +3,7 @@ import BookItem from "./BookItem";
 function BookList({books}){
 
     const displayBooks = books.map(book => {
-        return <BookItem key = {book.id} id = {book.id} title={book.title} price={book.price} quantity = {book.quantity} sold = {book.sold} cover={book.cover} />
+        return <BookItem key = {book.id} id = {book.id} title={book.title} price={book.price} author = {book.author} sold = {book.sold} cover={book.cover} />
     })
 
     return (

@@ -5,16 +5,9 @@ img{
 
 .card-deck{
   flex-wrap: wrap;
+  
 }
-.container-fluid{
-  background-color: black;
-}
-
-#buybook{
-  width: 100%;
-}
-
-.mybooks{
+.container-fluid, .mybooks, .container{
   background-color: black;
 }
 
