@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from "react";
-
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
@@ -16,7 +15,7 @@ function BookDetail(){
         fetch(`http://localhost:3000/books/${id}`)
         .then(r => r.json())
         .then(data => {
-            // console.log(data)
+            
             setBook(data)})
     }, [id])
 
@@ -29,17 +28,15 @@ function BookDetail(){
         .then(data => setBook(data))
     }
 
-    // console.log(book)
-
     return(
         <div className="container-fluid text-white">
 
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <img class="img-fluid img-thumbnail" style={{maxHeight:"500px", maxWidth:"300px", float:"right",marginRight:"20px"}} src={cover}/>
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <img className="img-fluid img-thumbnail" style={{maxHeight:"500px", maxWidth:"300px", float:"right",marginRight:"20px"}} src={cover}/>
                     </div>
-                    <div class="col" style={{marginTop:"20px"}}>
+                    <div className="col" style={{marginTop:"20px"}}>
                         <p>{title}</p>
                         <p>{subtitle}</p>
                         <p>by {author}</p>
@@ -51,18 +48,18 @@ function BookDetail(){
                 </div>
             </div>
             <div style={{margin:"50px"}}>
-            <small>Description</small>
-            <p>{description}</p>
-            <p>Publish Date: {published}</p>
-            <p>Publisher: {publisher}</p>
-            <p>{pages} pages </p>
-            <Button type="button" className="btn btn-primary mt-64" style={{width:"100%", marginBottom:"30px"}}>Buy Book</Button>
+                <small>Description</small>
+                <p>{description}</p>
+                <p>Publish Date: {published}</p>
+                <p>Publisher: {publisher}</p>
+                <p>{pages} pages </p>
+                <Button type="button" className="btn btn-primary mt-64" style={{width:"100%", marginBottom:"30px"}}>Buy Book</Button>
            
 
             </div>
            
             <Link className="btn btn-info" to={`/editbook/${id}`}>Edit Book</Link>
-            <button className = "btn btn-danger" style={{float: "right"}}onClick={handleDelete}>Delete Book</button>
+            <Button className = "btn btn-danger" style={{float: "right"}}onClick={handleDelete}>Delete Book</Button>
             
 
         </div>

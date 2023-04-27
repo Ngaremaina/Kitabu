@@ -21,10 +21,6 @@ function App() {
     setBook([...books, newbook])
   }
 
-  // const editBook = (editbook)=>{
-  //   setBook([...books, editbook])
-  // }
-
   const searchBook = (search) => {
     const fetchResults = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase()))
     return setBook(fetchResults)
