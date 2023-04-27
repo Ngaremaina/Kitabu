@@ -3,7 +3,7 @@ import { Button, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 function BookItem({id, title, price, author, cover}){
-
+    //Download Book function
     function downloadbook(){
         fetch('Book.pdf').then(response => {
             response.blob().then(blob => {
@@ -18,7 +18,7 @@ function BookItem({id, title, price, author, cover}){
         })
     }
      
-    
+    //Rendering the card that displays the list of books
     return (
         <Card className ="text-white border-dark bg-dark d-flex flex-column" style={{width :"15rem", margin: "5px"}}>
             <img className = "card-img-top" src={cover} alt="Book Cover"/>

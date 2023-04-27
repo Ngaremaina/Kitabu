@@ -5,12 +5,13 @@ import { Button } from "react-bootstrap";
 
 
 function BookDetail(){
+    //declaring the variables
     const [book, setBook] = useState("");
     const {title, subtitle, author, published, publisher, pages, price, quantity, sold, description, cover} = book
     const params= useParams()
     console.log(params)
     const { id } = useParams()
-
+    //fetching data by the id
     useEffect(() => {
         fetch(`http://localhost:3000/books/${id}`)
         .then(r => r.json())
@@ -18,7 +19,7 @@ function BookDetail(){
             
             setBook(data)})
     }, [id])
-
+    //deleting the book
     function handleDelete(){
         fetch(`http://localhost:3000/books/${id}`,{
             method:"DELETE",
@@ -27,7 +28,7 @@ function BookDetail(){
         .then(res => res.json())
         .then(data => setBook(data))
     }
-
+    //rendering the details of the book
     return(
         <div className="container-fluid text-white">
 
@@ -53,14 +54,9 @@ function BookDetail(){
                         
                         <Button type="button" className="btn btn-primary mt-4" style={{width:"100%", marginBottom:"30px"}}>Download Book</Button>
 
-                        
-
-                        
-                    </div>
-                    
+                    </div>            
                 </div>
             </div>           
-
         </div>
        
     )

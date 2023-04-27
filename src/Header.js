@@ -5,12 +5,14 @@ import { Link } from "react-router-dom";
 
 function Header({searchBook}){
     const [search, setSearch] = useState("")
-    
+    //passing the submit function that listens for the submit event listener
     const handleSubmit = (e) => {
         e.preventDefault()
+        //calling the search function
         searchBook(search)
     }
     return (
+        //displaying the nav bar
         <Nav className="navbar navbar-expand-sm text-white">
             <div className="container-fluid ">
                 <Link to="/" className="nav-link">Home</Link>

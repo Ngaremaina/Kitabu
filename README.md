@@ -4,10 +4,17 @@ The Book App is a web application that shows the user a collection of books. The
 # Demo #
 The pictures as shown depict the outlook of the web app
 ## Home Page ##
-![Home Page](./media/HomePage.png)
+![Home Page](./media/Homepage.png)
+
+## Details Page ##
+![Add Book](./media/Detailspage.png)
 
 ## Add Book ##
 ![Add Book](./media/AddBook.png)
+
+## Edit Book ##
+![Add Book](./media/editbookpage.png)
+
 
 # Getting Started #
 To run this application:

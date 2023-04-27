@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { useParams,useNavigate } from "react-router-dom";
 
-
 function EditBook({addBook}){
+    //declaring the params function
     const params= useParams()
     console.log(params)
     const { id } = useParams()
+    //declaring the navigate function
     const navigate = useNavigate()
-
+    //declaring our object variables
     const [title, setTitle] = useState("")
     const [subtitle, setSubtitle] = useState("")
     const [author, setAuthor] = useState("")
@@ -35,6 +36,7 @@ function EditBook({addBook}){
             pages:pages,
             cover:cover
         }
+        //patching object to the server
         fetch(`http://localhost:3000/books/${id}`,{
             method:"PATCH",
             headers:{"Content-Type":"application/json"},
@@ -43,11 +45,10 @@ function EditBook({addBook}){
         .then(res => res.json())
         .then(data => addBook(data))
 
+        //clearing the input fields
         setInputClear()
-
+        //Navigate to the home page
         navigate('/');
-
-        // window.location.reload(false);
         
     }
 
@@ -65,6 +66,7 @@ function EditBook({addBook}){
         setDescription("")
         
     }
+    //rendering the form
     return(
         <form className="bg-dark text-white" onSubmit={handleSubmit} id="addBook">
             <p className="text-center mb-3" style={{fontSize:"25px"}}>Edit Book</p>
