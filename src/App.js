@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
 import BookList from './BookList';
 import NewBook from './NewBook';
+
 
 
 function App() {
@@ -25,10 +27,12 @@ function App() {
 
   return (
     <div className='mybooks'>
-      <Header searchBook = {searchBook}/>
-      <BookList books={books}/>
-      <NewBook addBook={addBook}/>
-         
+       <Header searchBook = {searchBook}/>
+      <Routes>
+        <Route path='/' element={ <BookList books={books}/>}></Route>
+        <Route path='/addbook' element={<NewBook addBook={addBook}/>}></Route>
+      </Routes>
+  
     </div>
   );
 }

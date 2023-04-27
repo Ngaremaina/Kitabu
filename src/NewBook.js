@@ -56,7 +56,7 @@ function NewBook({addBook}){
     }
     return (
         <form className="bg-dark text-white" onSubmit={handleSubmit} id="addBook">
-            <p className="text-center mb-3">Add Book</p>
+            <p className="text-center mb-3" style={{fontSize:"25px"}}>Add Book</p>
             <div className="mb-3">
                 <label for="cover" class="form-label">Cover</label>
                 <input type="text" class="form-control" id="cover" value = {cover} placeholder="http://image.jpg" onChange={e => setCover(e.target.value)}/>
