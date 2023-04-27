@@ -19,12 +19,12 @@ The pictures as shown depict the outlook of the web app
 # Getting Started #
 To run this application:
 
-*Clone from here [Book App](https://github.com/Ngaremaina/bookapp)
+*Clone from here [Vitabu](https://github.com/Ngaremaina/Vitabu)
 
-*Run this command json-server --watch db.json-
+*Run this command json-server --watch db.json
 
 # To view the published HTML as a website #
-To visit this website, click on the link [here](https://ngaremaina.github.io/bookapp/) and ensure that the json server is running.
+To visit this website, click on the link [here](https://vitabuapp.netlify.app/) and ensure that the json server is running.
 
 
 # Author #
