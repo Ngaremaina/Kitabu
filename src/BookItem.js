@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 function BookItem({id, title, price, quantity, sold, cover}){
 
     function downloadbook(){
-        
+        fetch('SamplePDF.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'SamplePDF.pdf';
+                alink.click();
+            })
+        })
     }
      
     

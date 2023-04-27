@@ -34,7 +34,7 @@ function BookDetail(){
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <img className="img-fluid img-thumbnail" style={{maxHeight:"500px", maxWidth:"300px", float:"right",marginRight:"20px"}} src={cover}/>
+                        <img className="img-fluid img-thumbnail" style={{maxHeight:"500px", maxWidth:"300px", float:"right",marginRight:"20px"}} src={cover} alt="Book Cover"/>
                     </div>
                     <div className="col" style={{marginTop:"20px"}}>
                         <p>{title}</p>
