@@ -6,7 +6,7 @@ import BookList from './BookList';
 import NewBook from './NewBook';
 import BookDetail from './BookDetail';
 import EditBook from './EditBook';
-
+import Footer from './Footer';
 function App() {
   const [books, setBook] = useState([])
  
@@ -39,6 +39,7 @@ function App() {
         <Route path='/:id' element={<BookDetail />}></Route>
         <Route path='/editbook/:id' element={<EditBook addBook={addBook}/>}></Route>
       </Routes>
+      <Footer />
   
     </div>
   );

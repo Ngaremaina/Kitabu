@@ -52,7 +52,7 @@ function BookDetail(){
                         <p>Publisher: {publisher}</p>
                         <p>{pages} pages </p>
                         
-                        <Button type="button" className="btn btn-primary mt-4" style={{width:"100%", marginBottom:"30px"}}>Download Book</Button>
+                        <Button type="button" className="btn btn-primary mt-4" style={{width:"100%", marginBottom:"30px"}}>Add To Cart</Button>
 
                     </div>            
                 </div>
