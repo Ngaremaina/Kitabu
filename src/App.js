@@ -4,8 +4,7 @@ import './App.css';
 import Header from './Header';
 import BookList from './BookList';
 import NewBook from './NewBook';
-
-
+import BookDetail from './BookDetail';
 
 function App() {
   const [books, setBook] = useState([])
@@ -29,8 +28,9 @@ function App() {
     <div className='mybooks'>
        <Header searchBook = {searchBook}/>
       <Routes>
-        <Route path='/' element={ <BookList books={books}/>}></Route>
+        <Route exact path='/' element={ <BookList books={books}/>}></Route>
         <Route path='/addbook' element={<NewBook addBook={addBook}/>}></Route>
+        <Route path='/:id' element={<BookDetail />}></Route>
       </Routes>
   
     </div>

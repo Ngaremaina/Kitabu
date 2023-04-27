@@ -11,15 +11,15 @@ function Header({searchBook}){
         searchBook(search)
     }
     return (
-        <Nav class="navbar navbar-expand-sm text-white">
-            <div class="container-fluid ">
-                <Link to="/" class="nav-link" style={{marginRight : "20px"}}>Home</Link>
-                <Link to="/addbook" class="nav-link">Add Book</Link>
-                <div class="collapse navbar-collapse justify-content-end">
-                    <Form class="navbar-form navbar-right" id="search-form" onSubmit={handleSubmit}>
+        <Nav className="navbar navbar-expand-sm text-white">
+            <div className="container-fluid ">
+                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/addbook" className="nav-link">Add Book</Link>
+                <div className="collapse navbar-collapse justify-content-end">
+                    <Form className="navbar-form navbar-right" id="search-form" onSubmit={handleSubmit}>
                         <InputGroup>
-                            <input type="text" class="form-control" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)}/>
-                            <Button class="btn btn-default" type="submit">
+                            <input type="text" className="form-control" placeholder="Search" value={search} onChange={e => setSearch(e.target.value)}/>
+                            <Button className="btn btn-default" type="submit">
                                 <Search />
                             </Button>
                         </InputGroup>

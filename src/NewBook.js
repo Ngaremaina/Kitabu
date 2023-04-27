@@ -1,6 +1,9 @@
 import React, {useState} from "react";
+import { useNavigate } from "react-router-dom";
 
 function NewBook({addBook}){
+    const navigate = useNavigate()
+
     const [title, setTitle] = useState("")
     const [subtitle, setSubtitle] = useState("")
     const [author, setAuthor] = useState("")
@@ -37,6 +40,8 @@ function NewBook({addBook}){
         .then(data => addBook(data))
 
         setInputClear()
+
+        navigate('/');
         
     }
 
@@ -58,58 +63,58 @@ function NewBook({addBook}){
         <form className="bg-dark text-white" onSubmit={handleSubmit} id="addBook">
             <p className="text-center mb-3" style={{fontSize:"25px"}}>Add Book</p>
             <div className="mb-3">
-                <label for="cover" class="form-label">Cover</label>
-                <input type="text" class="form-control" id="cover" value = {cover} placeholder="http://image.jpg" onChange={e => setCover(e.target.value)}/>
+                <label for="cover" className="form-label">Cover</label>
+                <input type="text" className="form-control" id="cover" value = {cover} placeholder="http://image.jpg" onChange={e => setCover(e.target.value)}/>
             </div>
             <div className="mb-3">
-                <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" value={title} placeholder="Harry Potter és a bölcsek köve" onChange={e => setTitle(e.target.value)}/>
+                <label for="title" className="form-label">Title</label>
+                <input type="text" className="form-control" id="title" value={title} placeholder="Harry Potter és a bölcsek köve" onChange={e => setTitle(e.target.value)}/>
                 
             </div>
             <div className="mb-3">
-                <label for="subtitle" class="form-label">Subtitle</label>
-                <input type="text" class="form-control" id="subtitle" value={subtitle} placeholder="An edition of Harry Potter and the Philosopher's Stone" onChange={e => setSubtitle(e.target.value)}/>
+                <label for="subtitle" className="form-label">Subtitle</label>
+                <input type="text" className="form-control" id="subtitle" value={subtitle} placeholder="An edition of Harry Potter and the Philosopher's Stone" onChange={e => setSubtitle(e.target.value)}/>
                 
             </div>
             <div className="mb-3">
-                <label for="author" class="form-label">Author</label>
-                <input type="text" class="form-control" id="author" value={author} placeholder="J. K. Rowling" onChange={e => setAuthor(e.target.value)}/>
+                <label for="author" className="form-label">Author</label>
+                <input type="text" className="form-control" id="author" value={author} placeholder="J. K. Rowling" onChange={e => setAuthor(e.target.value)}/>
                 
             </div>
             <div className="mb-3">
-                <label for="price" class="form-label">Price</label>
-                <input type="number" class="form-control" id="price" value={price} placeholder="1000" onChange={e => setPrice(e.target.value)}/>
+                <label for="price" className="form-label">Price</label>
+                <input type="number" className="form-control" id="price" value={price} placeholder="1000" onChange={e => setPrice(e.target.value)}/>
 
             </div>
             <div className="mb-3">
-                <label for="quantity" class="form-label">Total Number of Books</label>
-                <input type="number" class="form-control" id="quantity" value={quantity} placeholder="250" onChange={e => setQuantity(e.target.value)}/>
+                <label for="quantity" className="form-label">Total Number of Books</label>
+                <input type="number" className="form-control" id="quantity" value={quantity} placeholder="250" onChange={e => setQuantity(e.target.value)}/>
                 
             </div>
             <div className="mb-3">
-                <label for="sold" class="form-label">Books Sold</label>
-                <input type="number" class="form-control" id="sold" value={sold} placeholder="200" onChange={e => setSold(e.target.value)}/>
+                <label for="sold" className="form-label">Books Sold</label>
+                <input type="number" className="form-control" id="sold" value={sold} placeholder="200" onChange={e => setSold(e.target.value)}/>
             </div>
             <div className="mb-3">
-                <label for="description" class="form-label">Description</label>
-                <input type="text" class="form-control" id="description" value={description} placeholder=" Harry Potter has never heard of Hogwarts School of Witchcraft and Wizardry...." onChange={e => setDescription(e.target.value)}/>  
+                <label for="description" className="form-label">Description</label>
+                <input type="text" className="form-control" id="description" value={description} placeholder=" Harry Potter has never heard of Hogwarts School of Witchcraft and Wizardry...." onChange={e => setDescription(e.target.value)}/>  
             </div>
             
             <div className="mb-3">
-                <label for="published" class="form-label">Publish Date</label>
-                <input type="date" class="form-control" id="published" value={published} onChange={e => setPublished(e.target.value)}/>
+                <label for="published" className="form-label">Publish Date</label>
+                <input type="date" className="form-control" id="published" value={published} onChange={e => setPublished(e.target.value)}/>
             </div>
             <div className="mb-3">
-                <label for="publisher" class="form-label">Publisher</label>
-                <input type="text" class="form-control" id="publisher" value={publisher} placeholder="Animus Kiadó" onChange={e => setPublisher(e.target.value)}/>
+                <label for="publisher" className="form-label">Publisher</label>
+                <input type="text" className="form-control" id="publisher" value={publisher} placeholder="Animus Kiadó" onChange={e => setPublisher(e.target.value)}/>
                 
             </div>
             <div className="mb-3">
-                <label for="pages" class="form-label">Pages</label>
-                <input type="number" class="form-control" id="pages" value={pages} placeholder="205" onChange={e => setPages(e.target.value)}/>
+                <label for="pages" className="form-label">Pages</label>
+                <input type="number" className="form-control" id="pages" value={pages} placeholder="205" onChange={e => setPages(e.target.value)}/>
                 
             </div>   
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" className="btn btn-primary">Submit</button>
         </form>
     )
 
