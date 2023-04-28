@@ -14,10 +14,16 @@ function App() {
  
   //Fetching data from json file
   useEffect(() => {
-    fetch("http://localhost:4000/books")
-    .then(res => res.json())
-    .then(data => setBook(data))
-  },[])
+    const interval = setInterval(() => {
+      fetch("http://localhost:4000/books")
+      .then(res => res.json())
+      .then(data => setBook(data))
+        
+      .catch(err => console.error(err));
+    }, 1000);
+  
+    return () => clearInterval(interval);
+  }, []);
 
   //adding book to the server
   const addBook = (newbook)=>{
