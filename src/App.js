@@ -12,7 +12,7 @@ function App() {
  
   //Fetching data from json file
   useEffect(() => {
-    fetch("http://localhost:3000/books")
+    fetch("http://localhost:4000/books")
     .then(res => res.json())
     .then(data => setBook(data))
   },[])

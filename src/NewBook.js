@@ -31,7 +31,7 @@ function NewBook({addBook}){
             pages:pages,
             cover:cover
         }
-        fetch("http://localhost:3000/books",{
+        fetch("http://localhost:4000/books",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(newbook)

@@ -13,7 +13,7 @@ function BookDetail(){
     const { id } = useParams()
     //fetching data by the id
     useEffect(() => {
-        fetch(`http://localhost:3000/books/${id}`)
+        fetch(`http://localhost:4000/books/${id}`)
         .then(r => r.json())
         .then(data => {
             
@@ -21,7 +21,7 @@ function BookDetail(){
     }, [id])
     //deleting the book
     function handleDelete(){
-        fetch(`http://localhost:3000/books/${id}`,{
+        fetch(`http://localhost:4000/books/${id}`,{
             method:"DELETE",
             headers:{"Content-Type":"application/json"}
         })

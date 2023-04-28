@@ -18,7 +18,7 @@ function BookItem({id, title, price, author, cover}){
                 <p className="card-text">Kshs. {price}</p>
                 <p className="card-text"><small>by {author}</small></p>
                 
-                <Link className="btn btn-primary mb-4 " to={`/${id}`}>Show details</Link>
+                <Link className="btn btn-success mb-4 " to={`/${id}`}>Show details</Link>
                 <div class="card-footer mt-6">
                     <div>
                     <Button type="button" style={{width: "90%"}} className="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2" onClick={addToCart}>Add To Cart</Button>
