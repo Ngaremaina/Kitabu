@@ -7,9 +7,7 @@ import { Button } from "react-bootstrap";
 function BookDetail(){
     //declaring the variables
     const [book, setBook] = useState("");
-    const {title, subtitle, author, published, publisher, pages, price, quantity, sold, description, cover, comments} = book
-    const params= useParams()
-    console.log(params)
+    const {title, subtitle, author, published, publisher, pages, price, quantity, sold, description, cover} = book
     const { id } = useParams()
 
     //fetching data by the id
