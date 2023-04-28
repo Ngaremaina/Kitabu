@@ -64,11 +64,11 @@ function NewBook({addBook}){
             <p className="text-center mb-3" style={{fontSize:"25px"}}>Add Book</p>
             <div className="mb-3">
                 <label for="cover" className="form-label">Cover</label>
-                <input type="text" className="form-control" id="cover" value = {cover} placeholder="http://image.jpg" onChange={e => setCover(e.target.value)}/>
+                <input type="text" className="form-control" id="cover" value = {cover} placeholder="https://www.jkrowling.com/wp-content/uploads/2016/10/HPATPS_Hero_OnGrey.png" onChange={e => setCover(e.target.value)}/>
             </div>
             <div className="mb-3">
                 <label for="title" className="form-label">Title</label>
-                <input type="text" className="form-control" id="title" value={title} placeholder="Harry Potter és a bölcsek köve" onChange={e => setTitle(e.target.value)}/>
+                <input type="text" className="form-control" id="title" value={title} placeholder="Harry Potter and the Philosopher's Stone" onChange={e => setTitle(e.target.value)}/>
                 
             </div>
             <div className="mb-3">

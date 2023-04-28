@@ -7,18 +7,19 @@ import { Button } from "react-bootstrap";
 function BookDetail(){
     //declaring the variables
     const [book, setBook] = useState("");
-    const {title, subtitle, author, published, publisher, pages, price, quantity, sold, description, cover} = book
+    const {title, subtitle, author, published, publisher, pages, price, quantity, sold, description, cover, comments} = book
     const params= useParams()
     console.log(params)
     const { id } = useParams()
+
     //fetching data by the id
     useEffect(() => {
         fetch(`http://localhost:4000/books/${id}`)
         .then(r => r.json())
         .then(data => {
-            
             setBook(data)})
     }, [id])
+
     //deleting the book
     function handleDelete(){
         fetch(`http://localhost:4000/books/${id}`,{
@@ -28,6 +29,12 @@ function BookDetail(){
         .then(res => res.json())
         .then(data => setBook(data))
     }
+    console.log(comments)
+    // const displayComments = comments.map(comment => {
+    //     console.log(comment.name)
+    //     console.log(comment.message)
+    //     return <div className="container-fluid"><p>{comment.name}</p><p>{comment.message}</p></div>
+    // })
     //rendering the details of the book
     return(
         <div className="container-fluid text-white">
@@ -54,7 +61,9 @@ function BookDetail(){
                         
                         <Button type="button" className="btn btn-primary mt-4" style={{width:"100%", marginBottom:"30px"}}>Add To Cart</Button>
 
-                    </div>            
+                    </div> 
+                    <p>Comments</p>
+                    {/* {displayComments} */}
                 </div>
             </div>           
         </div>
