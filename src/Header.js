@@ -17,6 +17,7 @@ function Header({searchBook}){
             <div className="container-fluid ">
                 <Link to="/" className="nav-link">Home</Link>
                 <Link to="/addbook" className="nav-link">Add Book</Link>
+                <Link to='/contact us' className="nav-link">Contact Us</Link>
                 <div className="collapse navbar-collapse justify-content-end">
                     <Form className="navbar-form navbar-right" id="search-form" onSubmit={handleSubmit}>
                         <InputGroup>
