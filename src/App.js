@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './Header';
+import Header from './components/Header';
 import BookList from './components/BookList';
-import NewBook from './NewBook';
+import NewBook from './components/NewBook';
 import BookDetail from './components/BookDetail';
 import EditBook from './components/EditBook';
 import Footer from './components/Footer';
