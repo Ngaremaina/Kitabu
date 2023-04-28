@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
-import BookList from './BookList';
+import BookList from './components/BookList';
 import NewBook from './NewBook';
-import BookDetail from './BookDetail';
+import BookDetail from './components/BookDetail';
 import EditBook from './EditBook';
 import Footer from './Footer';
-import Contact from './Contact';
+import Contact from './components/Contact';
 
 function App() {
   const [books, setBook] = useState([])
