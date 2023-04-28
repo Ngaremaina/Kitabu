@@ -11,14 +11,6 @@
       "sold": 14,
       "description": "Long ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom’s protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens.  Here an enigmatic band of warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his throne; and a determined woman undertakes the most treacherous of journeys. Amid plots and counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts: the game of thrones.",
       "cover": "https://covers.openlibrary.org/b/id/11291394-L.jpg",
-      "comments": [
-        {"name":"Owen",
-        "message":"Great Book"
-        },
-        {"name":"Susan",
-         "message":"Great Book"
-        }
-      ],
       "id": 1
     },
     {
@@ -33,7 +25,7 @@
       "price": 950,
       "quantity": 25,
       "sold": 21,
-      "comments": [],
+      
       "description": "Officer Francis, vigilante joker \"The Infamous Black Tongue,\" and ace thief Tesseract are forced by a cold-blooded Baba Yaga into an illegal fight ring as part of her effort to placate a vicious monster from another dimension.",
       "cover": "https://covers.openlibrary.org/b/id/13078761-L.jpg"
     },
@@ -49,7 +41,7 @@
       "price": 1000,
       "quantity": 24,
       "sold": 16,
-      "comments": [],
+      
       "description": "The war against Voldemort is not going well: even Muggle governments are noticing. Ron scans the obituary pages of The Daily Prophet looking for familiar names. Dumbledore is absent from Hogwarts for long stretches of time, and the Order of the Phoenix has already suffered losses.",
       "cover": "https://covers.openlibrary.org/b/id/10716324-L.jpg"
     },
@@ -62,7 +54,7 @@
       "published": "2020",
       "publisher": "Bloomsbury Publishing",
       "pages": 640,
-      "comments": [],
+      
       "price": 890,
       "quantity": 85,
       "sold": 55,
@@ -82,8 +74,8 @@
       "quantity": 25,
       "sold": 23,
       "description": "This book introduces Ann Soforth, Queen of Oogaboo, whom Tik-Tok, the clockwork man, assists in conquering the Nome King. Book 8 in L. Frank Baum's immortal OZ series, in which Betsy Bobbin and Hank the Mule are shipwrecked on the coast of Oz, meet up with the invading army of Queen Ann of Oogaboo, and help the Shaggy Man rescue his brother from the evil Nome King.",
-      "cover": "https://covers.openlibrary.org/b/id/2750960-L.jpg",
-      "comments": []
+      "cover": "https://covers.openlibrary.org/b/id/2750960-L.jpg"
+      
     },
     {
       "id": 6,
@@ -96,7 +88,6 @@
       "pages": 538,
       "price": 650,
       "quantity": 29,
-      "comments": [],
       "sold": 24,
       "description": "Oliver Twist is a young orphan. His life in the workhouse is lonely and sad. Oliver becomes an apprentice for an undertaker but runs away after he gets into a fight with another apprentice. When Oliver arrives in London, he meets Jack, also known as the Artful Dodger, who offers him a place to stay.",
       "cover": "https://covers.openlibrary.org/b/id/13469755-L.jpg"
@@ -112,7 +103,7 @@
       "pages": 310,
       "price": 980,
       "quantity": 30,
-      "comments": [],
+      
       "sold": 25,
       "description": "The story is about a young boy named Jim Hawkins who goes on a dangerous adventure to recover buried treasure. Along the way, he encounters mutinous pirates, marooned castaways, frightening tales of ghosts, and much more.",
       "cover": "https://covers.openlibrary.org/b/id/13295472-L.jpg"
@@ -129,7 +120,7 @@
       "price": 980,
       "quantity": 30,
       "sold": 28,
-      "comments":[],
+      
       "description": "Greg records his sixth grade experiences in a middle school where he and his best friend, Rowley, undersized weaklings amid boys who need to shave twice daily, hope just to survive, but when Rowley grows more popular, Greg must take drastic measures to save their friendship.",
       "cover": "https://covers.openlibrary.org/b/id/13077490-L.jpg"
     },
@@ -144,7 +135,7 @@
       "pages": 181,
       "price": 980,
       "quantity": 30,
-      "comments": [],
+      
       "sold": 10,
       "description": "The novel follows the life of Okonkwo, an Igbo (\"Ibo\" in the novel) man and local wrestling champion in the fictional Nigerian clan of Umuofia. The work is split into three parts, with the first describing his family, personal history, and the customs and society of the Igbo, and the second and third sections introducing the influence of European colonialism and Christian missionaries on Okonkwo, his family, and the wider Igbo community.",
       "cover": "https://covers.openlibrary.org/b/id/418592-L.jpg"
@@ -160,7 +151,7 @@
       "pages": 377,
       "price": 980,
       "quantity": 30,
-      "comments": [],
+     
       "sold": 24,
       "description": "Twelve-year-old Percy Jackson is on the most dangerous quest of his life. With the help of a satyr and a daughter of Athena, Percy must journey across the United States to catch a thief who has stolen the original weapon of mass destruction—Zeus’ master bolt. Along the way, he must face a host of mythological enemies determined to stop him. Most of all, he must come to terms with a father he has never known, and an Oracle that has warned him of betrayal by a friend.",
       "cover": "https://covers.openlibrary.org/b/id/13011707-L.jpg"
@@ -192,7 +183,7 @@
       "pages": 751,
       "price": 980,
       "quantity": 30,
-      "comments": [],
+      
       "sold": 26,
       "description": "Fourteen-year-old Harry Potter joins the Weasleys at the Quidditch World Cup, then enters his fourth year at Hogwarts Academy where he is mysteriously entered in an unusual contest that challenges his wizarding skills, friendships and character, amid signs that an old enemy is growing stronger.",
       "cover": "https://covers.openlibrary.org/b/id/12904448-L.jpg"
@@ -207,7 +198,7 @@
       "price": 600,
       "quantity": 12,
       "sold": 8,
-      "comments": [],
+     
       "description": "One choice can transform you--or it can destroy you. But every choice has consequences, and as unrest surges in the factions all around her, Tris Prior must continue trying to save those she loves--and herself--while grappling with haunting questions of grief and forgiveness, identity and loyalty, politics and love. Tris's initiation day should have been marked by celebration and victory with her chosen faction; instead, the day ended with unspeakable horrors. War now looms as conflict between the factions and their ideologies grows. And in times of war, sides must be chosen, secrets will emerge, and choices will become even more irrevocable--and even more powerful. Transformed by her own decisions but also by haunting grief and guilt, radical new discoveries, and shifting relationships, Tris must fully embrace her Divergence, even if she does not know what she may lose by doing so. 'New York Times' bestselling author Veronica Roth's much-anticipated second book of the dystopian 'Divergent' series is another intoxicating thrill ride of a story, rich with hallmark twists, heartbreaks, romance, and powerful insights about human nature",
       "cover": "https://covers.openlibrary.org/b/id/13326743-L.jpg",
       "id": 13
@@ -224,8 +215,7 @@
       "sold": 12,
       "description": "Ever since the gods of Ancient Egypt were unleashed in the modern world, Carter Kane and his sister Sadie have been in trouble. As descendants of the House of Life, the Kanes have some powers at their command, but the devious gods haven't given them much time to master their skills at Brooklyn House, which has become a training ground for young magicians.  And now their most threatening enemy yet - the chaos snake Apophis - is rising. If they don't prevent him from breaking free in a few days' time, the world will come to an end. In other words, it's a typical week for the Kane family.  To have any chance of battling the Forces of Chaos, the Kanes must revive the sun god Ra. But that would be a feat more powerful than any magician has ever accomplished.  First they have to search the world for the three sections of the Book of Ra, then they have to learn how to chant its spells. Oh, and did we mention that no one knows where Ra is exactly?  Narrated in two different wisecracking voices, featuring a large cast of new and unforgettable characters, and with adventures spanning the globe, this second installment in the Kane Chronicles is nothing short of a thrill ride.",
       "cover": "https://covers.openlibrary.org/b/id/13012124-L.jpg",
-      "id": 14,
-      "comments": []
+      "id": 14
     },
     {
       "title": "The Cruel Prince",
@@ -237,7 +227,6 @@
       "price": 900,
       "quantity": 60,
       "sold": 42,
-      "comments": [],
       "description": "Jude, seventeen and mortal, gets tangled in palace intrigues while trying to win a place in the treacherous High Court of Faerie, where she and her sisters have lived for a decade.",
       "cover": "https://covers.openlibrary.org/b/id/13128236-L.jpg",
       "id": 15

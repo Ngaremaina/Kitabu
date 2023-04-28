@@ -29,12 +29,7 @@ function BookDetail(){
         .then(res => res.json())
         .then(data => setBook(data))
     }
-    console.log(comments)
-    // const displayComments = comments.map(comment => {
-    //     console.log(comment.name)
-    //     console.log(comment.message)
-    //     return <div className="container-fluid"><p>{comment.name}</p><p>{comment.message}</p></div>
-    // })
+    
     //rendering the details of the book
     return(
         <div className="container-fluid text-white">
@@ -62,8 +57,7 @@ function BookDetail(){
                         <Button type="button" className="btn btn-primary mt-4" style={{width:"100%", marginBottom:"30px"}}>Add To Cart</Button>
 
                     </div> 
-                    <p>Comments</p>
-                    {/* {displayComments} */}
+                   
                 </div>
             </div>           
         </div>
