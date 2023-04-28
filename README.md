@@ -7,21 +7,23 @@ The pictures as shown depict the outlook of the web app
 ![Home Page](./media/Homepage.png)
 
 ## Details Page ##
-![Add Book](./media/Detailspage.png)
+![Show Details](./media/Detailspage.png)
 
 ## Add Book ##
 ![Add Book](./media/AddBook.png)
 
 ## Edit Book ##
-![Add Book](./media/editbookpage.png)
+![Edit Book](./media/editbookpage.png)
 
 
 # Getting Started #
 To run this application:
 
-*Clone from here [Vitabu](https://github.com/Ngaremaina/Vitabu)
+*Clone from [here](https://github.com/Ngaremaina/Vitabu)
 
-*Run this command json-server --watch db.json -p 4000
+*Run this command: json-server --watch db.json -p 4000
+
+*Run this command: npm start
 
 # To view the published HTML as a website #
 To visit this website, click on the link [here](https://vitabuapp.netlify.app/) and ensure that the json server is running.
