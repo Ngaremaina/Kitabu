@@ -2,11 +2,13 @@ import React, { useState,useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 
 function BookDetail(){
     //declaring the variables
     const [book, setBook] = useState("");
+    const navigate = useNavigate()
     const {title, subtitle, author, published, publisher, pages, price, quantity, sold, description, cover} = book
     const { id } = useParams()
 
@@ -26,6 +28,8 @@ function BookDetail(){
         })
         .then(res => res.json())
         .then(data => setBook(data))
+
+        navigate('/')
     }
     
     //rendering the details of the book
