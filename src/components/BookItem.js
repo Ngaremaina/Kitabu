@@ -2,12 +2,7 @@ import React from "react";
 import { Button, Card } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
-function BookItem({id, title, price, author, cover}){
-    //add item to cart
-   function addToCart(){
-    console.log(id)
-
-   }
+function BookItem({ id, title, price, author, cover }){
      
     //Rendering the card that displays the list of books
     return (
@@ -21,20 +16,12 @@ function BookItem({id, title, price, author, cover}){
                 <Link className="btn btn-success mb-4 " to={`/${id}`}>Show details</Link>
                 <div class="card-footer mt-6">
                     <div>
-                    <Button type="button" style={{width: "90%"}} className="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2" onClick={addToCart}>Add To Cart</Button>
-
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </Card>      
-       
-    
-     
+                    <Button type="button" style={{width: "90%"}} className="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x mb-2">Add To Cart</Button>
+                    </div>                  
+                </div>             
+            </div>       
+        </Card>         
     )
-
 }
 
 export default BookItem

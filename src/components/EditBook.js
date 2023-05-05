@@ -37,7 +37,7 @@ function EditBook({addBook}){
             cover:cover
         }
         //patching object to the server
-        fetch(`http://localhost:3000/books/${id}`,{
+        fetch(`https://book-data.onrender.com/books/${id}`,{
             method:"PATCH",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(editbook)

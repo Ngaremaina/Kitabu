@@ -16,7 +16,7 @@ function Contact({addMessage}){
             message:message,
         }
 
-        fetch(" http://localhost:4000/messages",{
+        fetch("https://book-data.onrender.com/messages",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(newmessage)

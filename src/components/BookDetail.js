@@ -14,7 +14,7 @@ function BookDetail(){
 
     //fetching data by the id
     useEffect(() => {
-        fetch(`http://localhost:4000/books/${id}`)
+        fetch(`https://book-data.onrender.com/books/${id}`)
         .then(r => r.json())
         .then(data => {
             setBook(data)})
@@ -22,7 +22,7 @@ function BookDetail(){
 
     //deleting the book
     function handleDelete(){
-        fetch(`http://localhost:4000/books/${id}`,{
+        fetch(`https://book-data.onrender.com/books/${id}`,{
             method:"DELETE",
             headers:{"Content-Type":"application/json"}
         })
@@ -39,8 +39,7 @@ function BookDetail(){
             <div className="container">
                 <div className="row">
                     <div className="col-sm-4 ">
-                        <img className="img-fluid" style={{maxHeight:"502px", maxWidth:"450px", float:"left",marginRight:"20px"}} src={cover} alt="Book Cover"/>
-                        
+                        <img className="img-fluid" style={{maxHeight:"502px", maxWidth:"450px", float:"left",marginRight:"20px"}} src={cover} alt="Book Cover"/>                   
                         <Link className="btn btn-info mt-3 mb-4" to={`/editbook/${id}`}>Edit Book</Link>
                         <Button className = "btn btn-danger mt-3 mb-4" style={{float: "right"}}onClick={handleDelete}>Delete Book</Button>
                     </div>

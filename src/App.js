@@ -15,12 +15,12 @@ function App() {
   //Fetching data from json file
   useEffect(() => {
     const interval = setInterval(() => {
-      fetch("http://localhost:4000/books")
+      fetch("https://book-data.onrender.com/books")
       .then(res => res.json())
       .then(data => setBook(data))
         
       .catch(err => console.error(err));
-    }, 1000);
+    }, 6000);
   
     return () => clearInterval(interval);
   }, []);

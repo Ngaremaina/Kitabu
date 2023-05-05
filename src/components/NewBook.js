@@ -31,7 +31,7 @@ function NewBook({addBook}){
             pages:pages,
             cover:cover
         }
-        fetch("http://localhost:4000/books",{
+        fetch("https://book-data.onrender.com/books",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(newbook)
