@@ -10,9 +10,9 @@ function BookItem({ id, title, price, author, cover }){
             <img className = "card-img-top" src={cover} alt="Book Cover"/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
-                <p className="card-text">Kshs. {price}</p>
                 <p className="card-text"><small>by {author}</small></p>
-                
+                <p className="card-text">Kshs. {price}</p>
+               
                 <Link className="btn btn-success mb-4 " to={`/${id}`}>Show details</Link>
                 <div class="card-footer mt-6">
                     <div>
