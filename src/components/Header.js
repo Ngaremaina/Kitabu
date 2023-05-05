@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Nav,Button,Form,InputGroup } from "react-bootstrap";
 import { Search } from "react-bootstrap-icons";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header({searchBook}){
     const [search, setSearch] = useState("")
@@ -15,9 +15,9 @@ function Header({searchBook}){
         //displaying the nav bar
         <Nav className="navbar navbar-expand-sm text-white">
             <div className="container-fluid ">
-                <Link to="/" className="nav-link">Home</Link>
-                <Link to="/addbook" className="nav-link">Add Book</Link>
-                <Link to='/contact us' className="nav-link">Contact Us</Link>
+                <NavLink to="/" className="nav-link">Home</NavLink>
+                <NavLink to="/addbook" className="nav-link">Add Book</NavLink>
+                <NavLink to='/contact us' className="nav-link">Contact Us</NavLink>
                 <div className="collapse navbar-collapse justify-content-end">
                     <Form className="navbar-form navbar-right" id="search-form" onSubmit={handleSubmit}>
                         <InputGroup>
