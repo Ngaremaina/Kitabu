@@ -34,7 +34,7 @@ function BookDetail(){
     
     //rendering the details of the book
     return(
-        <div className="container-fluid text-white">
+        <div className="container-fluid">
 
             <div className="container">
                 <div className="row">
