@@ -6,14 +6,13 @@ img{
 .card-deck{
   flex-wrap: wrap;
   
+  
 }
-.container-fluid, .mybooks, .container{
-  background-color: black;
-}
+
 
 #addBook{
   padding: 20px;
-  background-color: black;
+  
   margin: 40px 40px 0 40px;
 }
 
