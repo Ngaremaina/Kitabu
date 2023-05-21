@@ -15,19 +15,15 @@ The pictures as shown depict the outlook of the web app
 ## Edit Book ##
 ![Edit Book](./media/editbookpage.png)
 
-
 # Getting Started #
 To run this application:
 
 *Clone from [here](https://github.com/Ngaremaina/Kitabu)
 
-*Run this command: json-server --watch db.json -p 4000
-
 *Run this command: npm start
 
 # To view the published HTML as a website #
 To visit this website, click on the link [here](https://kitabu.netlify.app/) and ensure that the json server is running.
-
 
 # Author #
 Owen Ngare
