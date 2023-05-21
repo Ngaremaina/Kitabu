@@ -6,7 +6,7 @@ function BookItem({ id, title, price, author, cover }){
      
     //Rendering the card that displays the list of books
     return (
-        <Card className ="text-white border-dark bg-dark d-flex flex-column" style={{width :"19%", margin: "3px"}}>
+        <Card className ="text-white border-dark bg-dark d-flex flex-column" style={{width :"15rem", margin: "3px"}}>
             <img className = "card-img-top" src={cover} alt="Book Cover"/>
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
