@@ -28,7 +28,7 @@ The technologies used to host the website are [Netlify](https://kitabu.netlify.a
 To visit this website, click on the link [here](https://kitabu.netlify.app/) and ensure that the json server is running.
 
 # Author #
-Owen Ngare
+Ngare Maina
 
 # License #
 MIT License
