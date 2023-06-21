@@ -25,7 +25,7 @@ To run this application:
 The technologies used to host the website are [Netlify](https://kitabu.netlify.app/) for the front end and [Render](https://book-data.onrender.com/books) for the backend
 
 # To view the published website #
-To visit this website, click on the link [here](https://kitabu.netlify.app/) and ensure that the json server is running.
+To visit this website, click on the link [here](https://kitabu.netlify.app/).
 
 # Author #
 Ngare Maina
