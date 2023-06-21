@@ -19,6 +19,7 @@ The pictures as shown depict the outlook of the web app
 To run this application:
 
 * Clone from [here](https://github.com/Ngaremaina/Kitabu)
+* Run this command: npm install
 * Run this command: npm start
 
 # Technologies
