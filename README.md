@@ -19,13 +19,12 @@ The pictures as shown depict the outlook of the web app
 To run this application:
 
 * Clone from [here](https://github.com/Ngaremaina/Kitabu)
-
 * Run this command: npm start
 
-## Technologies
+# Technologies
 The technologies used to host the website are [Netlify](https://kitabu.netlify.app/) for the front end and [Render](https://book-data.onrender.com/books) for the backend
 
-# To view the published HTML as a website #
+# To view the published website #
 To visit this website, click on the link [here](https://kitabu.netlify.app/) and ensure that the json server is running.
 
 # Author #
