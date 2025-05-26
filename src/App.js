@@ -41,7 +41,7 @@ function App() {
 
   //searching book by its title
   const searchBook = (search) => {
-    const filtered = allBooks.filter(book =>
+    const filtered = books.filter(book =>
       book.title.toLowerCase().includes(search.toLowerCase())
     );
     setBook(filtered);
