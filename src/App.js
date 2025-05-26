@@ -17,19 +17,22 @@ function App() {
  
   //Fetching data from json file
   useEffect(() => {
-    setLoading(true)
-    try{
-      fetch("https://book-data.onrender.com/books")
-      .then(res => res.json())
-      .then(data => setBook(data))
-    }
-    catch(error){
-      console.log(error)
-    }
-    finally{
-      setLoading(false)
-    }
+    const fetchBooks = async () => {
+      setLoading(true);
+      try {
+        const res = await fetch("https://book-data.onrender.com/books");
+        const data = await res.json();
+        setBook(data);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchBooks();
   }, []);
+
 
   //adding book to the server
   const addBook = (newbook)=>{
@@ -38,44 +41,42 @@ function App() {
 
   //searching book by its title
   const searchBook = (search) => {
-    const fetchResults = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase()))
-    return setBook(fetchResults)
-  }
+    const filtered = allBooks.filter(book =>
+      book.title.toLowerCase().includes(search.toLowerCase())
+    );
+    setBook(filtered);
+};
 
-  return (
-    //rendering the components
+ return (
     <>
-    {loading ? (
-      <CirclesWithBar
-        height="100"
-        width="100"
-        color="#4fa94d"
-        outerCircleColor="#4fa94d"
-        innerCircleColor="#4fa94d"
-        barColor="#4fa94d"
-        ariaLabel="circles-with-bar-loading"
-        wrapperStyle={{}}
-        wrapperClass="loader"
-        visible={true}
-      />
-    ) 
-      : (
+      {loading ? (
+        <CirclesWithBar
+          height="100"
+          width="100"
+          color="#4fa94d"
+          outerCircleColor="#4fa94d"
+          innerCircleColor="#4fa94d"
+          barColor="#4fa94d"
+          ariaLabel="circles-with-bar-loading"
+          wrapperStyle={{}}
+          wrapperClass="loader"
+          visible={true}
+        />
+      ) : (
         <div className='mybooks'>
-          <Analytics/>
-          <Header searchBook = {searchBook}/>
-          {/*rendering the routes to the components*/}
+          <Analytics />
+          <Header searchBook={searchBook} />
           <Routes>
-            <Route exact path='/' element={ <BookList books={books}/>}></Route>
-            <Route path='/addbook' element={<NewBook addBook={addBook}/>}></Route>
-            <Route path='/:id' element={<BookDetail />}></Route>
-            <Route path='/editbook/:id' element={<EditBook addBook={addBook}/>}></Route>
-            <Route path='/contact us' element={<Contact />}></Route>
+            <Route path='/' element={<BookList books={books} />} />
+            <Route path='/addbook' element={<NewBook addBook={addBook} />} />
+            <Route path='/:id' element={<BookDetail />} />
+            <Route path='/editbook/:id' element={<EditBook addBook={addBook} />} />
+            <Route path='/contact-us' element={<Contact />} />
           </Routes>
           <Footer />
-      
-        </div>)
-      }
-      </>
+        </div>
+      )}
+    </>
   );
 }
 
