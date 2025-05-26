@@ -71,7 +71,7 @@ function App() {
             <Route path='/addbook' element={<NewBook addBook={addBook} />} />
             <Route path='/:id' element={<BookDetail />} />
             <Route path='/editbook/:id' element={<EditBook addBook={addBook} />} />
-            <Route path='/contact-us' element={<Contact />} />
+            <Route path='/contact us' element={<Contact />} />
           </Routes>
           <Footer />
         </div>
