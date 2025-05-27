@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
-import BookList from './components/BookList';
-import NewBook from './components/NewBook';
-import BookDetail from './components/BookDetail';
-import EditBook from './components/EditBook';
+import BookList from './pages/BookList';
+import NewBook from './pages/NewBook';
+import BookDetail from './pages/BookDetail';
+import EditBook from './pages/EditBook';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
+import Contact from './pages/Contact';
 import { CirclesWithBar } from "react-loader-spinner"
 import { Analytics } from "@vercel/analytics/react"
 
 function App() {
-  const [books, setBook] = useState([])
+    const [books, setBook] = useState([])
   const [loading, setLoading] = useState(false)
  
   //Fetching data from json file
@@ -47,7 +47,7 @@ function App() {
     setBook(filtered);
 };
 
- return (
+return (
     <>
       {loading ? (
         <CirclesWithBar
@@ -58,7 +58,6 @@ function App() {
           innerCircleColor="#4fa94d"
           barColor="#4fa94d"
           ariaLabel="circles-with-bar-loading"
-          wrapperStyle={{}}
           wrapperClass="loader"
           visible={true}
         />
@@ -79,5 +78,4 @@ function App() {
     </>
   );
 }
-
-export default App;
+export default App

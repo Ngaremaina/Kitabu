@@ -4,11 +4,8 @@ img{
 }
 
 .card-deck{
-  flex-wrap: wrap;
-  
-  
+  flex-wrap: wrap;  
 }
-
 
 #addBook{
   padding: 20px;
