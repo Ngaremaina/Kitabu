@@ -23,10 +23,10 @@ To run this application:
 * Run this command: npm run dev
 
 # Technologies
-The technologies used to host the website are [Netlify](https://kitabu.netlify.app/) for the front end and [Render](https://book-data.onrender.com/books) for the backend
+The technologies used to host the website are [Vercel](https://kitabu-sand.vercel.app/) for the front end and [Render](https://book-data.onrender.com/books) for the backend
 
 # To view the published website #
-To visit this website, click on the link [here](https://kitabu.netlify.app/).
+To visit this website, click on the link [here](https://kitabu-sand.vercel.app/).
 
 # Author #
 Ngare Maina
