@@ -4,10 +4,9 @@ on:
   push:
     branches: [main]
   pull_request:
-    # Run CodeQL on PRs targeting the default branch
     branches: [main]
   schedule:
-    - cron: '0 0 * * 0'  # Run every Sunday at midnight
+    - cron: '0 0 * * 0'
 
 jobs:
   analyze:
@@ -17,24 +16,32 @@ jobs:
     permissions:
       actions: read
       contents: read
-      security-events: write  
+      security-events: write
 
     strategy:
       fail-fast: false
       matrix:
-        language: [javascript]  
+        language: [javascript]
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Initialize CodeQL
-      uses: github/codeql-action/init@v3
-      with:
-        languages: ${{ matrix.language }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
 
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v3
+      - name: Install dependencies
+        run: npm install
 
-    - name: Perform CodeQL Analysis
-      uses: github/codeql-action/analyze@v3
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: ${{ matrix.language }}
+
+      - name: Build project manually
+        run: npm run build
+
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v3
