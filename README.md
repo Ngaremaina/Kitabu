@@ -19,8 +19,8 @@ The pictures as shown depict the outlook of the web app
 To run this application:
 
 * Clone from [here](https://github.com/Ngaremaina/Kitabu)
-* Run this command: npm install
-* Run this command: npm run dev
+* Run this command: yarn install
+* Run this command: yarn dev
 
 # Technologies
 The technologies used to host the website are [Vercel](https://kitabu-sand.vercel.app/) for the front end and [Render](https://book-data.onrender.com/books) for the backend
