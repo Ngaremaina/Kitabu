@@ -6,7 +6,7 @@
 version: 2
 updates:
   # Node.js dependencies (used by Vite)
-  - package-ecosystem: "npm"  # 
+  - package-ecosystem: "yarn"  # 
     directory: "/"  # Location of your package.json and package-lock.json
     schedule:
       interval: "weekly"
