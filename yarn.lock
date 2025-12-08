@@ -749,7 +749,7 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.14.tgz#1433419d73b2a7ebfc6918dcefd2ec0d5cd698f2"
   integrity sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==
 
-"@types/react-dom@^19.2.3":
+"@types/react-dom@^19.1.2":
   version "19.2.3"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.2.3.tgz#c1e305d15a52a3e508d54dca770d202cb63abf2c"
   integrity sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==
@@ -776,10 +776,10 @@
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.3.tgz#d1884c8cc4a426d1ac117ca2611bf333834c6798"
   integrity sha512-D1XC7WK8K+zZEveUPY+cf4+kgauk8N4eHr/XIHXGlGYkHLud6hK9lYfZk1ry1TNh798cZUCgb6MqGEG8DkJt6Q==
 
-"@vercel/analytics@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.5.0.tgz#073f93694897414b21a8495e2619bbf64447dcaa"
-  integrity sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==
+"@vercel/analytics@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.6.1.tgz#b4e16daf445cf6cd365a91e43d86e9e5b3428ddc"
+  integrity sha512-oH9He/bEM+6oKlv3chWuOOcp8Y6fo6/PSro8hEkgCW3pu9/OiCXiUpRUogDh3Fs3LH2sosDrx8CxeOLBEE+afg==
 
 "@vitejs/plugin-react@^5.1.1":
   version "5.1.1"
@@ -1514,10 +1514,10 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-loader-spinner@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-8.0.0.tgz#c6c8f8f0694da57eed66c7a05b705b14ecc09fa9"
-  integrity sha512-Us+bM4Jb3ae5dcLF0owFAML2kRzBbqnAODjV+dNIG1TbErr4mj/nhAqDjLWsu4PH3txei5S5tQklI0dpcyTO0A==
+react-loader-spinner@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-7.0.3.tgz#283fa667aef20b40d85ba8030c4894d662c4de0e"
+  integrity sha512-N29VGq7pPHH1/TqDNKc04ij0uFtJpyM2i6M5vXOcbOfrfl7KENguD4SYkrWBNfwpILHfAPqrRGSPrqoQvLOJsQ==
   dependencies:
     styled-components "^6.1.19"
     tinycolor2 "^1.6.0"
