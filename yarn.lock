@@ -589,10 +589,10 @@
     uncontrollable "^8.0.4"
     warning "^4.0.3"
 
-"@rolldown/pluginutils@1.0.0-beta.47":
-  version "1.0.0-beta.47"
-  resolved "https://registry.yarnpkg.com/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.47.tgz#c282c4a8c39f3d6d2f1086aae09a34e6241f7a50"
-  integrity sha512-8QagwMH3kNCuzD8EWL8R2YPW5e4OrHNSAHRFDdmFqEwEaD/KcNKjVoumo+gP2vW5eKB2UPbM6vTYiGZX0ixLnw==
+"@rolldown/pluginutils@1.0.0-beta.53":
+  version "1.0.0-beta.53"
+  resolved "https://registry.yarnpkg.com/@rolldown/pluginutils/-/pluginutils-1.0.0-beta.53.tgz#c57a5234ae122671aff6fe72e673a7ed90f03f87"
+  integrity sha512-vENRlFU4YbrwVqNDZ7fLvy+JR1CRkyr01jhSiDpE1u6py3OMzQfztQU2jxykW3ALNxO4kSlqIDeYyD0Y9RcQeQ==
 
 "@rollup/rollup-android-arm-eabi@4.46.2":
   version "4.46.2"
@@ -749,7 +749,7 @@
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.14.tgz#1433419d73b2a7ebfc6918dcefd2ec0d5cd698f2"
   integrity sha512-gNMvNH49DJ7OJYv+KAKn0Xp45p8PLl6zo2YnvDIbTd4J6MER2BmWN49TG7n9LvkyihINxeKW8+3bfS2yDC9dzQ==
 
-"@types/react-dom@^19.2.3":
+"@types/react-dom@^19.1.2":
   version "19.2.3"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-19.2.3.tgz#c1e305d15a52a3e508d54dca770d202cb63abf2c"
   integrity sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==
@@ -781,15 +781,15 @@
   resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.5.0.tgz#073f93694897414b21a8495e2619bbf64447dcaa"
   integrity sha512-MYsBzfPki4gthY5HnYN7jgInhAZ7Ac1cYDoRWFomwGHWEX7odTEzbtg9kf/QSo7XEsEAqlQugA6gJ2WS2DEa3g==
 
-"@vitejs/plugin-react@^5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-5.1.1.tgz#fa1957e053fe90d7cc2deea5593ae382a9761595"
-  integrity sha512-WQfkSw0QbQ5aJ2CHYw23ZGkqnRwqKHD/KYsMeTkZzPT4Jcf0DcBxBtwMJxnu6E7oxw5+JC6ZAiePgh28uJ1HBA==
+"@vitejs/plugin-react@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-5.1.2.tgz#46f47be184c05a18839cb8705d79578b469ac6eb"
+  integrity sha512-EcA07pHJouywpzsoTUqNh5NwGayl2PPVEJKUSinGGSxFGYn+shYbqMGBg6FXDqgXum9Ou/ecb+411ssw8HImJQ==
   dependencies:
     "@babel/core" "^7.28.5"
     "@babel/plugin-transform-react-jsx-self" "^7.27.1"
     "@babel/plugin-transform-react-jsx-source" "^7.27.1"
-    "@rolldown/pluginutils" "1.0.0-beta.47"
+    "@rolldown/pluginutils" "1.0.0-beta.53"
     "@types/babel__core" "^7.20.5"
     react-refresh "^0.18.0"
 
@@ -1514,10 +1514,10 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-loader-spinner@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-8.0.0.tgz#c6c8f8f0694da57eed66c7a05b705b14ecc09fa9"
-  integrity sha512-Us+bM4Jb3ae5dcLF0owFAML2kRzBbqnAODjV+dNIG1TbErr4mj/nhAqDjLWsu4PH3txei5S5tQklI0dpcyTO0A==
+react-loader-spinner@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-7.0.3.tgz#283fa667aef20b40d85ba8030c4894d662c4de0e"
+  integrity sha512-N29VGq7pPHH1/TqDNKc04ij0uFtJpyM2i6M5vXOcbOfrfl7KENguD4SYkrWBNfwpILHfAPqrRGSPrqoQvLOJsQ==
   dependencies:
     styled-components "^6.1.19"
     tinycolor2 "^1.6.0"
