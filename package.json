@@ -15,8 +15,8 @@
     "react": "^19.2.3",
     "react-bootstrap": "^2.10.10",
     "react-bootstrap-icons": "^1.11.6",
-    "react-dom": "^19.2.0",
-    "react-loader-spinner": "^8.0.0",
+    "react-dom": "^19.2.1",
+    "react-loader-spinner": "^7.0.3",
     "react-router-dom": "^7.10.1"
   },
   "devDependencies": {
