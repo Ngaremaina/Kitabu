@@ -441,10 +441,15 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@9.39.1", "@eslint/js@^9.38.0":
+"@eslint/js@9.39.1":
   version "9.39.1"
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.39.1.tgz#0dd59c3a9f40e3f1882975c321470969243e0164"
   integrity sha512-S26Stp4zCy88tH94QbBv3XCuzRQiZ9yXofEILmglYTh/Ug/a9/umqvgFtYBAo3Lp0nsI/5/qH1CCrbdK3AP1Tw==
+
+"@eslint/js@^9.39.2":
+  version "9.39.2"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.39.2.tgz#2d4b8ec4c3ea13c1b3748e0c97ecd766bdd80599"
+  integrity sha512-q1mjIoW1VX4IvSocvM/vbTiveKC4k9eLrajNEuSsmjymSDEbpGddtpfOoN7YGAqBK3NG+uqo8ia4PDTt8buCYA==
 
 "@eslint/object-schema@^2.1.7":
   version "2.1.7"
@@ -1023,10 +1028,10 @@ eslint-plugin-react-hooks@^7.0.1:
     zod "^3.25.0 || ^4.0.0"
     zod-validation-error "^3.5.0 || ^4.0.0"
 
-eslint-plugin-react-refresh@^0.4.24:
-  version "0.4.24"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.24.tgz#6914e8757eb7d7ccc3efb9dbcc8a51feda71d89e"
-  integrity sha512-nLHIW7TEq3aLrEYWpVaJ1dRgFR+wLDPN8e8FpYAql/bMV2oBEfC37K0gLEGgv9fy66juNShSMV8OkTqzltcG/w==
+eslint-plugin-react-refresh@^0.4.25:
+  version "0.4.25"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-refresh/-/eslint-plugin-react-refresh-0.4.25.tgz#8b93adaf06315fed11cc242df6e8512b8d878147"
+  integrity sha512-dRUD2LOdEqI4zXHqbQ442blQAzdSuShAaiSq5Vtyy6LT08YUf0oOjBDo4VPx0dCPgiPWh1WB4dtbLOd0kOlDPQ==
 
 eslint-scope@^8.4.0:
   version "8.4.0"
@@ -1514,10 +1519,10 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-loader-spinner@^7.0.3:
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-7.0.3.tgz#283fa667aef20b40d85ba8030c4894d662c4de0e"
-  integrity sha512-N29VGq7pPHH1/TqDNKc04ij0uFtJpyM2i6M5vXOcbOfrfl7KENguD4SYkrWBNfwpILHfAPqrRGSPrqoQvLOJsQ==
+react-loader-spinner@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-8.0.0.tgz#c6c8f8f0694da57eed66c7a05b705b14ecc09fa9"
+  integrity sha512-Us+bM4Jb3ae5dcLF0owFAML2kRzBbqnAODjV+dNIG1TbErr4mj/nhAqDjLWsu4PH3txei5S5tQklI0dpcyTO0A==
   dependencies:
     styled-components "^6.1.19"
     tinycolor2 "^1.6.0"
@@ -1552,10 +1557,10 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@^19.2.1:
-  version "19.2.1"
-  resolved "https://registry.yarnpkg.com/react/-/react-19.2.1.tgz#8600fa205e58e2e807f6ef431c9f6492591a2700"
-  integrity sha512-DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==
+react@^19.2.3:
+  version "19.2.3"
+  resolved "https://registry.yarnpkg.com/react/-/react-19.2.3.tgz#d83e5e8e7a258cf6b4fe28640515f99b87cd19b8"
+  integrity sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==
 
 resolve-from@^4.0.0:
   version "4.0.0"

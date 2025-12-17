@@ -6,14 +6,15 @@ on:
 
 jobs:
   auto-merge:
-    if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot'
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-    runs-on: ubuntu-latest
+
     steps:
       - uses: fastify/github-action-merge-dependabot@v3.6.4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           merge-method: squash
-          enable-auto-merge: true
+          use-github-auto-merge: true
