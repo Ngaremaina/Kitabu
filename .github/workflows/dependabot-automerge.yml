@@ -1,20 +1,28 @@
-name: Auto-merge Dependabot PRs
+name: Dependabot Auto-Merge
 
 on:
   pull_request:
-    types: [opened, reopened, synchronize]
+    types: [opened, synchronize, reopened]
+  pull_request_review:
+    types: [submitted]
+  check_suite:
+    types: [completed]
 
 jobs:
-  auto-merge:
-    if: github.actor == 'dependabot[bot]'
+  automerge:
     runs-on: ubuntu-latest
+
+    if: |
+      github.actor == 'dependabot[bot]' &&
+      github.event.pull_request != null
+
     permissions:
       contents: write
       pull-requests: write
 
     steps:
-      - uses: fastify/github-action-merge-dependabot@v3.6.4
+      - name: Enable auto-merge for Dependabot PR
+        uses: fastify/github-action-merge-dependabot@v3
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MERGE_BOT_TOKEN }}
           merge-method: squash
-          use-github-auto-merge: true
