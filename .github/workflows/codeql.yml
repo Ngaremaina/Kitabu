@@ -33,7 +33,7 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm install
+        run: yarn install
 
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
@@ -41,7 +41,7 @@ jobs:
           languages: ${{ matrix.language }}
 
       - name: Build project manually
-        run: npm run build
+        run: yarn run build
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
