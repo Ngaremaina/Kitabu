@@ -1,4 +1,3 @@
-import React from "react";
 import BookItem from "./BookItem";
 
 function BookList({books}){
@@ -9,10 +8,9 @@ function BookList({books}){
     })
     //calling our function
     return (
-        <div className="card-deck col d-flex p-3 justify-content-center">
+        <div className="flex flex-wrap justify-center gap-4 p-4">
             {displayBooks}
         </div>
-        
     )
 }
 

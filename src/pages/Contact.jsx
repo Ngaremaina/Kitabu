@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import {useState} from "react";
 import { useNavigate } from "react-router-dom";
 
 function Contact({addMessage}){
@@ -31,25 +31,25 @@ function Contact({addMessage}){
         setName("")
         setMessage("")
         setEmail("")
-        
+
     }
 
     return(
-        <form className="bg-dark text-white" onSubmit={handleSubmit} id="addBook">
-            <p className="text-center mb-3" style={{fontSize:"25px"}}>Please Fill in the Form</p>
-            <div className="mb-3">
-                <label for="name" className="form-label">Name</label>
-                <input type="text" className="form-control" id="name" value = {name} placeholder="John Doe" onChange={e => setName(e.target.value)}/>
+        <form className="mx-auto max-w-xl bg-black p-6 text-white" onSubmit={handleSubmit} id="addBook">
+            <p className="mb-4 text-center text-2xl font-semibold">Please Fill in the Form</p>
+            <div className="mb-4">
+                <label htmlFor="name" className="mb-1 block text-sm font-medium">Name</label>
+                <input type="text" className="w-full rounded-md border border-gray-700 bg-gray-900 px-3 py-2 text-white placeholder-gray-500 focus:border-green-500 focus:outline-none" id="name" value = {name} placeholder="John Doe" onChange={e => setName(e.target.value)}/>
             </div>
-            <div className="mb-3">
-                <label for="email" className="form-label">Email</label>
-                <input type="email" className="form-control" id="email" value={email} placeholder="jondoe@example.com" onChange={e => setEmail(e.target.value)}/>
+            <div className="mb-4">
+                <label htmlFor="email" className="mb-1 block text-sm font-medium">Email</label>
+                <input type="email" className="w-full rounded-md border border-gray-700 bg-gray-900 px-3 py-2 text-white placeholder-gray-500 focus:border-green-500 focus:outline-none" id="email" value={email} placeholder="jondoe@example.com" onChange={e => setEmail(e.target.value)}/>
             </div>
-            <div className="mb-3">
-                <label for="message" className="form-label">Message</label>
-                <textarea type="text" className="form-control" id="message" value={email} placeholder="Message..." onChange={e => setMessage(e.target.value)}></textarea>
+            <div className="mb-4">
+                <label htmlFor="message" className="mb-1 block text-sm font-medium">Message</label>
+                <textarea className="w-full rounded-md border border-gray-700 bg-gray-900 px-3 py-2 text-white placeholder-gray-500 focus:border-green-500 focus:outline-none" id="message" value={message} placeholder="Message..." onChange={e => setMessage(e.target.value)}></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button type="submit" className="rounded-md bg-blue-600 px-4 py-2 font-medium text-white hover:bg-blue-700">Submit</button>
         </form>
     )
 }

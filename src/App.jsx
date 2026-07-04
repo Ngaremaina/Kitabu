@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import Header from './components/Header';
 import BookList from './pages/BookList';
 import NewBook from './pages/NewBook';
@@ -58,11 +57,11 @@ return (
           innerCircleColor="#4fa94d"
           barColor="#4fa94d"
           ariaLabel="circles-with-bar-loading"
-          wrapperClass="loader"
+          wrapperClass="flex items-center justify-center h-screen"
           visible={true}
         />
       ) : (
-        <div className='mybooks'>
+        <div className='min-h-screen bg-black text-white'>
           <Analytics />
           <Header searchBook={searchBook} />
           <Routes>
