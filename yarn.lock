@@ -1602,7 +1602,7 @@ react-loader-spinner@^8.0.2:
     styled-components "^6.3.6"
     tinycolor2 "^1.6.0"
 
-react-router-dom@^7.18.0:
+react-router-dom@^7.18.1:
   version "7.18.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-7.18.1.tgz#0d1b138e291393059ad481c3e10e366385a978a4"
   integrity sha512-KaZh+X/6UtEp28x51AUYZDMg9NGoz2ja3dNHa+ta/tk40vCzKhQ/RypCWBMLbmDr6//E24Vv5uPsrqXFozdkAg==
