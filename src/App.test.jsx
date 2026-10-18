@@ -25,6 +25,6 @@ describe("App", () => {
         expect(await screen.findByText("Book One")).toBeInTheDocument();
         expect(screen.getAllByRole("link", { name: "Home" }).length).toBeGreaterThan(0);
         expect(screen.getByText(`© ${new Date().getFullYear()} Kitabu`)).toBeInTheDocument();
-        expect(fetch).toHaveBeenCalledWith("https://book-data.onrender.com/books");
+        expect(fetch).toHaveBeenCalledWith("https://book-data-zeta.vercel.app/books");
     });
 });

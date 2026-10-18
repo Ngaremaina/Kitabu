@@ -19,7 +19,7 @@ function App() {
     const fetchBooks = async () => {
       setLoading(true);
       try {
-        const res = await fetch("https://book-data.onrender.com/books");
+        const res = await fetch("https://book-data-zeta.vercel.app/books");
         const data = await res.json();
         setBook(data);
       } catch (error) {
