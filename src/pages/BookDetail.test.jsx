@@ -46,7 +46,7 @@ describe("BookDetail", () => {
         expect(screen.getByText("by J. K. Rowling")).toBeInTheDocument();
         expect(screen.getByText("Kshs. 1000")).toBeInTheDocument();
         expect(screen.getByText("Available copies: 6")).toBeInTheDocument();
-        expect(fetch).toHaveBeenCalledWith("https://book-data.onrender.com/books/1");
+        expect(fetch).toHaveBeenCalledWith("https://book-data-zeta.vercel.app/books/1");
     });
 
     it("deletes the book and navigates home", async () => {
@@ -61,7 +61,7 @@ describe("BookDetail", () => {
 
         await waitFor(() => expect(screen.getByText("Home Page")).toBeInTheDocument());
         expect(fetch).toHaveBeenLastCalledWith(
-            "https://book-data.onrender.com/books/1",
+            "https://book-data-zeta.vercel.app/books/1",
             expect.objectContaining({ method: "DELETE" })
         );
     });

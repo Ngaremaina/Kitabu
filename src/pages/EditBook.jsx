@@ -34,7 +34,7 @@ function EditBook({addBook}){
             cover:cover
         }
         //patching object to the server
-        fetch(`https://book-data.onrender.com/books/${id}`,{
+        fetch(`https://book-data-zeta.vercel.app/books/${id}`,{
             method:"PATCH",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(editbook)
