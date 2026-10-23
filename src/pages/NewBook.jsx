@@ -31,7 +31,7 @@ function NewBook({addBook}){
             pages:pages,
             cover:cover
         }
-        fetch("https://book-data.onrender.com/books",{
+        fetch("https://book-data-zeta.vercel.app/books",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(newbook)
