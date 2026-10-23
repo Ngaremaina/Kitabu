@@ -32,7 +32,7 @@ describe("EditBook", () => {
         await user.click(screen.getByRole("button", { name: "Submit" }));
 
         expect(fetch).toHaveBeenCalledWith(
-            "https://book-data.onrender.com/books/7",
+            "https://book-data-zeta.vercel.app/books/7",
             expect.objectContaining({ method: "PATCH" })
         );
         const body = JSON.parse(fetch.mock.calls[0][1].body);

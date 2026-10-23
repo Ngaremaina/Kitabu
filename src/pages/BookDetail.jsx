@@ -17,7 +17,7 @@ function BookDetail(){
         const fetchEachBook = async () => {
             setLoading(true)
             try{
-                const response = await fetch(`https://book-data.onrender.com/books/${id}`)
+                const response = await fetch(`https://book-data-zeta.vercel.app/books/${id}`)
                 const data = await response.json()
                 setBook(data)
             }
@@ -33,7 +33,7 @@ function BookDetail(){
 
     //deleting the book
     function handleDelete(){
-        fetch(`https://book-data.onrender.com/books/${id}`,{
+        fetch(`https://book-data-zeta.vercel.app/books/${id}`,{
             method:"DELETE",
             headers:{"Content-Type":"application/json"}
         })

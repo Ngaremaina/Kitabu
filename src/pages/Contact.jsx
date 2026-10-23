@@ -16,7 +16,7 @@ function Contact({addMessage}){
             message:message,
         }
 
-        fetch("https://book-data.onrender.com/messages",{
+        fetch("https://book-data-zeta.vercel.app/books/messages",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(newmessage)
